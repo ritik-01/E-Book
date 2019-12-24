@@ -1,0 +1,34 @@
+<p>There are three types of variables in Java:</p>
+<ul>
+<li>Local Variables</li>
+<li>Instance Variables</li>
+<li>Static Variables</li>
+</ul>
+<p>Let us now learn about each one of these variables in detail.</p>
+<ol>
+<li><strong>Local Variables</strong>: A variable defined within a block or method or constructor is called local variable.
+<ul>
+<li>These variable are created when the block in entered or the function is called and destroyed after exiting from the block or when the call returns from the function.</li>
+<li>The scope of these variables exists only within the block in which the variable is declared. i.e. we can access these variable only within that block.</li>
+<li>Initilisation of Local Variable is Mandatory.</li>
+</ul>
+</li>
+<li><strong>Instance Variables</strong>: Instance variables are non-static variables and are declared in a class outside any method, constructor or block.
+<ul>
+<li>As instance variables are declared in a class, these variables are created when an object of the class is created and destroyed when the object is destroyed.</li>
+<li>Unlike local variables, we may use access specifiers for instance variables. If we do not specify any access specifier then the default access specifier will be used.</li>
+<li>Initilisation of Instance Variable is not Mandatory. Its default value is 0</li>
+<li>Instance Variable can be accessed only by creating objects.</li>
+</ul>
+</li>
+<li><strong>Static Variables</strong>: Static variables are also known as Class variables.
+<ul>
+<li>These variables are declared similarly as instance variables, the difference is that static variables are declared using the static keyword within a class outside any method constructor or block.</li>
+<li>Unlike instance variables, we can only have one copy of a static variable per class irrespective of how many objects we create.</li>
+<li>Static variables are created at the start of program execution and destroyed automatically when execution ends.</li>
+<li>Initilisation of Static Variable is not Mandatory. Its default value is 0</li>
+<li>If we access the static variable like Instance variable (through an object), the compiler will show the warning message and it won&rsquo;t halt the program. The compiler will replace the object name to class name automatically.</li>
+<li>If we access the static variable without the class name, Compiler will automatically append the class name</li>
+</ul>
+</li>
+</ol>
